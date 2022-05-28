@@ -10,6 +10,7 @@ public class NoteObjectBattleSystem : MonoBehaviour
 
     public GameObject missEffect, hitEffect, goodEffect, perfectEffect, effectSpawner;
 
+    public BulletSpawn bulletSpawn;
     
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,9 @@ public class NoteObjectBattleSystem : MonoBehaviour
         if(collision.tag=="Activator")
         {
             canBePressed = true;
+            bulletSpawn.canShoot = true;
+            Debug.Log(bulletSpawn.canShoot);
+            return;
         }
         if(collision.tag=="EndGame")
         {

@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class EnemyBehavior : MonoBehaviour
+public class RetryButton : MonoBehaviour
 {
+    [SerializeField] private string retryButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +19,9 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
+    public void retryScreen() 
+    {
+        SceneManager.LoadScene(retryButton);
     
-    
-
+    }
 }

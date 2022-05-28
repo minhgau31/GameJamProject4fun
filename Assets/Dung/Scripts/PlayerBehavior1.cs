@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBehavior : MonoBehaviour
+public class PlayerBehavior1 : MonoBehaviour
 {
     public Transform checkpoint1;
     int Health = 100;

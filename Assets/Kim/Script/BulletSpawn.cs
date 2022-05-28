@@ -18,6 +18,8 @@ public class BulletSpawn : MonoBehaviour
     //Referencing the game manager
     public GameManager gameManager;
 
+    //Can the player shoot
+    public bool canShoot = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,36 +31,44 @@ public class BulletSpawn : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true)
         {
             Debug.Log("Shoot");
             Shoot();
+            canShoot = false;
         }
 
     }
 
     void Shoot()
     {
-        if (gameManager.perfectHit)
+        if (gameManager.perfectHit == true)
         {
-            Debug.Log("Perfect Hit");
+            
+            Debug.Log("spawning Perfect Hit");
             Instantiate(perfectBulletPrefab, weaponSpawn.position, weaponSpawn.rotation);
+            
         }
 
-        else if (gameManager.goodHit)
+        if (gameManager.goodHit == true)
         {
-            Debug.Log("Good Hit");
+            
+            Debug.Log("spawning Good Hit");
             Instantiate(goodBulletPrefab, weaponSpawn.position, weaponSpawn.rotation);
+            
         }
 
-        else if (gameManager.normalHit)
+        if (gameManager.normalHit == true)
         {
-            Debug.Log("Normal Hit");
+            
+            Debug.Log("spawning Normal Hit");
             Instantiate(normalBulletPrefab, weaponSpawn.position, weaponSpawn.rotation);
+            
         }
 
-        else if (gameManager.noHit)
+        if (gameManager.noHit == true)
         {
+            
             Debug.Log("KEKW");
         }
     }

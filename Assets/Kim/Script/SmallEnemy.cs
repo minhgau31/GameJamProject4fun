@@ -5,16 +5,34 @@ using UnityEngine;
 public class SmallEnemy : MonoBehaviour
 {
 
-    public GameManager gameManager;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int Health = 35;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Perfect Bullet")
+        {
+            Debug.Log("Hit by Perfect Bullet");
+            Health = Health - 35;
+        }
+
+        else if (collision.gameObject.tag == "Good Bullet")
+        {
+            Debug.Log("Hit by Good Bullet");
+            Health = Health - 20;
+        }
+
+        else if (collision.gameObject.tag == "Normal Bullet")
+        {
+            Debug.Log("Hit by Normal Bullet");
+            Health = Health - 10;
+        }
     }
 }

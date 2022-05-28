@@ -17,12 +17,15 @@ public class GameManager : MonoBehaviour
     public int scorePerGoodNote = 125;
     public int scorePerPerfectNote = 150;
 
+    public Transform player;
+
+    
 
     //To figure out what note we got
-    public bool perfectHit;
-    public bool normalHit;
-    public bool goodHit;
-    public bool noHit;
+    public bool perfectHit = false;
+    public bool normalHit = false;
+    public bool goodHit = false;
+    public bool noHit = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,29 +53,38 @@ public class GameManager : MonoBehaviour
     {
 
         normalHit = true;
+        perfectHit = false;
+        goodHit = false;
         NoteHit();
         Debug.Log("Normal Hit");
-        return;
+        
     }
     public void GoodHit()
     {
 
         goodHit = true;
+        perfectHit = false;
+        normalHit = false;
         NoteHit();
         Debug.Log("Good Hit");
+        
+
         return;
+
     }
 
     public void PerfectHit()
     {
         perfectHit = true;
+        normalHit = false;
+        goodHit = false;
         NoteHit();
         Debug.Log("Perfect Hit");
-        return;
+        
     }
     public void NoteHit()
     {
-        Debug.Log("Hit");
+        //Debug.Log("Hit");
     }
    public void NoteMiss()
     {
