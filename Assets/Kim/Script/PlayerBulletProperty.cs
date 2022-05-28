@@ -7,25 +7,27 @@ public class PlayerBulletProperty : MonoBehaviour
 
     public float speed;
     public Rigidbody2D rb;
+    EnemyBehavior target;
+    Vector2 bulletDirection;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.up * speed;
+        rb.GetComponent<Rigidbody2D>();
+        target = GameObject.FindObjectOfType<EnemyBehavior>();
+        bulletDirection = (target.transform.position - transform.position).normalized * speed;
+        rb.velocity = new Vector2(bulletDirection.x, bulletDirection.y);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == " Enemy ")
+        if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log(collision.tag == " Enemy ");
+            Debug.Log(collision.gameObject.tag == "Enemy");
             Destroy(gameObject);
+
         }
 
     }
