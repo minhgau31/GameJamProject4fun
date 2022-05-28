@@ -7,7 +7,6 @@ public class EnenmySpawner : MonoBehaviour
     public PlayerBehavior pb;
     public bool spawnEnemy = false;
     public GameObject enemy;
-
     // Start is called before the first frame update
     void Start()
     {

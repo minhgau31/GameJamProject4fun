@@ -24,7 +24,7 @@ public class CheckPoint1 : MonoBehaviour
         {
             if (other.tag == "Player")
             {
-                Debug.Log("Change destination");
+                Debug.Log("Spawn Enemy");
                 pb.check1 = false;
                 es.spawnEnemy = true;
             }

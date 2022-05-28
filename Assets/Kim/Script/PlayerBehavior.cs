@@ -10,50 +10,42 @@ public class PlayerBehavior : MonoBehaviour
     public GameManager gameManager;
     public bool check1 = true;
     public bool check2 = false;
+
+    
     // Update is called once per frame
     void Update()
     {
-        
+        playerMove();
+    }
+
+    void playerMove()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (check1 == true)
+            if (check1 == true && gameManager.perfectHit == true)
             {
-                Debug.Log("Move");
-                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 0.05f);
+                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 1.0f);
             }
-
-            if (check2 == true)
+            else if (check1 == true && gameManager.goodHit == true)
             {
-                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint2.position, 0.05f);
+                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 0.5f);
             }
-
+            else if (check1 == true && gameManager.normalHit == true)
+            {
+                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 0.2f);
+            }
         }
     }
 
-    void Travel()
+    private void OnTriggerEnter2D(Collision2D collision)
     {
-        //if (gameManager.perfectHit == true)
-        //{
-        //    Vector2 destination = Vector2.Lerp(this.transform.position, checkpoint1.position,);
-        //}
-
-        //if (gameManager.goodHit == true)
-        //{
-        //    Vector2 destination = Vector3.MoveTowards(this.transform.position, checkpoint1.position, );
-        //}
-       
-    }
-
-
-    private void OnColliderEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "smallBullet")
+        if (collision.gameObject.tag == "smallBullet")
         {
             Health = Health - 5;
             Debug.Log(Health);
         }
 
-        else if (collision.tag == "mediumBullet")
+        else if (collision.gameObject.tag == "mediumBullet")
         {
             Health = Health - 10;
         }
@@ -62,5 +54,8 @@ public class PlayerBehavior : MonoBehaviour
         {
             Health = Health - 15;
         }
+
+
+        
     }
 }

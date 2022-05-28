@@ -11,6 +11,7 @@ public class ButtonController : MonoBehaviour
     public Sprite pressedImage;
 
     public KeyCode keytoPress;
+    public KeyCode secondkeytoPress;
     void Start()
     {
         theSR = GetComponent<SpriteRenderer>();
@@ -19,11 +20,11 @@ public class ButtonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(keytoPress))
+        if(Input.GetKeyDown(keytoPress) || Input.GetKeyDown(secondkeytoPress))
         {
             theSR.sprite = pressedImage;
         }
-        if(Input.GetKeyUp(keytoPress))
+        if(Input.GetKeyUp(keytoPress) || Input.GetKeyDown(secondkeytoPress))
         {
             theSR.sprite = defaultImage;
         }
