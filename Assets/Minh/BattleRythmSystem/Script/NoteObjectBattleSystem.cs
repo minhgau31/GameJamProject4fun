@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteObject : MonoBehaviour
+public class NoteObjectBattleSystem : MonoBehaviour
 {
     public bool canBePressed;
 
@@ -27,22 +27,22 @@ public class NoteObject : MonoBehaviour
                 gameObject.SetActive(false);
 
                 //GameManager.instance.NoteHit();
-                if(Mathf.Abs(this.transform.position.y)>0.331f)
+                if(Mathf.Abs(this.transform.position.x) < 1.7f|| (Mathf.Abs(this.transform.position.x) > 2.35f))
                 {
-                    Debug.Log(Mathf.Abs(transform.position.y));
+                    Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
 
                 }
-                else if(Mathf.Abs(this.transform.position.y)>0.1f)
+                else if (Mathf.Abs(this.transform.position.x) < 1.95f || (Mathf.Abs(this.transform.position.x) > 2.18f))
                 {
-                    Debug.Log(Mathf.Abs(transform.position.y));
+                    Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.GoodHit();
                     Instantiate(goodEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
                 }
-                else
+                else 
                 {
-                    Debug.Log(Mathf.Abs(transform.position.y));
+                    Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.PerfectHit();
                     Instantiate(perfectEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
                 }

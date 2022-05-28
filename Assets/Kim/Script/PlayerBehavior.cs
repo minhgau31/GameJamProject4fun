@@ -13,11 +13,12 @@ public class PlayerBehavior : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnColliderEnter2D(Collider2D collision)
     {
         if (collision.tag == "smallBullet")
         {
             Health = Health - 5;
+            Debug.Log(Health);
         }
 
         else if (collision.tag == "mediumBullet")

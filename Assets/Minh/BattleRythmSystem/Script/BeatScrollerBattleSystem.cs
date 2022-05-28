@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BeatScroller : MonoBehaviour
+public class BeatScrollerBattleSystem : MonoBehaviour
 {
     public float beatTempo;
     public bool hasStarted = false;
    
-   
+ 
     // Start is called before the first frame update
     void Start()
     {
-       
-
        
         beatTempo = beatTempo / 60f;
     }
@@ -21,7 +19,7 @@ public class BeatScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        transform.position -= new Vector3(0f, beatTempo*Time.deltaTime,0f);
+        
+        transform.position -= new Vector3(beatTempo * Time.deltaTime, 0f,0f);
     }
 }
