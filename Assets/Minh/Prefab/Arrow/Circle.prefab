@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 6231336894492125323}
   - component: {fileID: 6231336894492125322}
   - component: {fileID: 6231336894492125316}
-  - component: {fileID: 6231336894492125317}
   - component: {fileID: 570604715450013996}
   m_Layer: 9
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Activator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6231336894492125320}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 1.5942715, y: 9.61, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -100,26 +99,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000009536743, y: -0.00000011920929}
   serializedVersion: 2
-  m_Radius: 0.0001
---- !u!114 &6231336894492125317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6231336894492125320}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684583d70b93a0a4a86bd6028c62a193, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePressed: 0
-  keytoPress: 32
-  missEffect: {fileID: 4087708690552220082, guid: 3019e71b48ab94f4783b8db1246c0a1d, type: 3}
-  hitEffect: {fileID: 2504460923947563643, guid: cf88735430f6b2040a9cc181f93a5882, type: 3}
-  goodEffect: {fileID: 6459504443543290219, guid: 036e74826ca61a3428cafc6fe93e8b26, type: 3}
-  perfectEffect: {fileID: 7323350746198649612, guid: 1fd1c3feb2a961647b9836e7fdf36b6f, type: 3}
-  effectSpawner: {fileID: 0}
+  m_Radius: 0.57
 --- !u!114 &570604715450013996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,11 +113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keytoPress: 0
-  secondkeytoPress: 0
+  keytoPress: 32
   missEffect: {fileID: 4087708690552220082, guid: 3019e71b48ab94f4783b8db1246c0a1d, type: 3}
   hitEffect: {fileID: 2504460923947563643, guid: cf88735430f6b2040a9cc181f93a5882, type: 3}
   goodEffect: {fileID: 6459504443543290219, guid: 036e74826ca61a3428cafc6fe93e8b26, type: 3}
   perfectEffect: {fileID: 7323350746198649612, guid: 1fd1c3feb2a961647b9836e7fdf36b6f, type: 3}
   effectSpawner: {fileID: 0}
   bulletSpawn: {fileID: 0}
+  playerBehavior: {fileID: 0}

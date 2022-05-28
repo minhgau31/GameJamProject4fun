@@ -21,6 +21,8 @@ public class BulletSpawn : MonoBehaviour
     //Can the player shoot
     public bool canShoot = false;
 
+    public PlayerBehavior playerBehavior;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,7 @@ public class BulletSpawn : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true)
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true && playerBehavior.ableToShoot==true)
         {
             Debug.Log("Shoot");
             Shoot();

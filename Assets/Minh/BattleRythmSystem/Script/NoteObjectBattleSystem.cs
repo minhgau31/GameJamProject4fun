@@ -11,6 +11,8 @@ public class NoteObjectBattleSystem : MonoBehaviour
     public GameObject missEffect, hitEffect, goodEffect, perfectEffect, effectSpawner;
 
     public BulletSpawn bulletSpawn;
+
+    public PlayerBehavior playerBehavior;
     
     // Start is called before the first frame update
     void Start()
@@ -28,14 +30,14 @@ public class NoteObjectBattleSystem : MonoBehaviour
                 gameObject.SetActive(false);
 
                 //GameManager.instance.NoteHit();
-                if(Mathf.Abs(this.transform.position.x) < 1.8f|| (Mathf.Abs(this.transform.position.x) > 2.35f))
+                if(Mathf.Abs(this.transform.position.x)< 2.48f|| Mathf.Abs(this.transform.position.x) > 2.66f)
                 {
                     Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
 
                 }
-                else if (Mathf.Abs(this.transform.position.x) < 1.95f || (Mathf.Abs(this.transform.position.x) > 2.18f))
+                else if (Mathf.Abs(this.transform.position.x) < 2.5f || Mathf.Abs(this.transform.position.x) > 2.60f)
                 {
                     Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.GoodHit();
@@ -55,10 +57,15 @@ public class NoteObjectBattleSystem : MonoBehaviour
         if(collision.tag=="Activator")
         {
             canBePressed = true;
-            bulletSpawn.canShoot = true;
-            Debug.Log(bulletSpawn.canShoot);
-            return;
+            if(playerBehavior.ableToShoot==true)
+            {
+                bulletSpawn.canShoot = true;
+                Debug.Log(bulletSpawn.canShoot);
+                return;
+            }
         }
+           
+           
         if(collision.tag=="EndGame")
         {
             canBePressed = false;
@@ -70,11 +77,5 @@ public class NoteObjectBattleSystem : MonoBehaviour
         }
 
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Activator")
-        {
-            
-        }
-    }
+  
 }

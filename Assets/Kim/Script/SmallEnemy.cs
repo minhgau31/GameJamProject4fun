@@ -7,11 +7,15 @@ public class SmallEnemy : MonoBehaviour
 
     public int Health = 35;
 
+    public PlayerBehavior playerBehavior;
+
     void Update()
     {
         if (Health <= 0)
         {
+            playerBehavior.ableToShoot = false;
             Destroy(gameObject);
+
         }
     }
 

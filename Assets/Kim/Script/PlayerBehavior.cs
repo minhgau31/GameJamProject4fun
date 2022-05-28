@@ -8,58 +8,55 @@ public class PlayerBehavior : MonoBehaviour
     public Transform checkpoint2;
     int Health = 100;
     public GameManager gameManager;
-    public bool check1 = true;
-    public bool check2 = false;
+    public WayPoint Destination;
+    public bool ReachedDestination = false;
+ 
+
+    public bool ableToShoot = false;
     // Update is called once per frame
     void Update()
     {
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (check1 == true)
-            {
-                Debug.Log("Move");
-                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 0.05f);
-                transform.right = checkpoint1.position - transform.position;
-                if (transform.position==checkpoint1.position)
-                {
-                    check2 = true;
-                    check1 = false;
-                }
-            }
 
-            if (check2 == true)
-            {
-                transform.position = Vector3.MoveTowards(this.transform.position, checkpoint2.position, 0.05f);
-            }
-
+            Travel();
         }
     }
 
     void Travel()
     {
-        //if (gameManager.perfectHit == true)
-        //{
-        //    Vector2 destination = Vector2.Lerp(this.transform.position, checkpoint1.position,);
-        //}
+        float dist = Vector3.Distance(transform.position, Destination.transform.position);
+        if (Vector3.Distance(transform.position, Destination.transform.position) < 0.02f)
+        {
+            ReachedDestination = true;
+            Destination = Destination.Destination;
+        }
+        if (ableToShoot == false)
+        {
+            if (gameManager.perfectHit == true)
+            {
+                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 0.5f);
+            }
 
-        //if (gameManager.goodHit == true)
-        //{
-        //    Vector2 destination = Vector3.MoveTowards(this.transform.position, checkpoint1.position, );
-        //}
-       
+            if (gameManager.goodHit == true)
+            {
+                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 0.5f);
+            }
+        }
+
     }
 
 
-    private void OnColliderEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "smallBullet")
+        if (collision.gameObject.tag == "smallBullet")
         {
             Health = Health - 5;
             Debug.Log(Health);
         }
 
-        else if (collision.tag == "mediumBullet")
+        else if (collision.gameObject.tag == "mediumBullet")
         {
             Health = Health - 10;
         }
@@ -68,5 +65,15 @@ public class PlayerBehavior : MonoBehaviour
         {
             Health = Health - 15;
         }
+        if (collision.gameObject.tag == "Enemy Check Point")
+        {
+            
+            ableToShoot = true;
+            Debug.Log("alo");
+        }
+
     }
+   
+
+
 }
