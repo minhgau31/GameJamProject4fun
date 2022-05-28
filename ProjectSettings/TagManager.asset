@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - PlayerBullet
   - EnemyBullet
+  - Perfect Bullet
+  - Good Bullet
+  - Normal Bullet
   layers:
   - Default
   - TransparentFX

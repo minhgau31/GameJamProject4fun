@@ -16,14 +16,7 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
-    // Enemy get hit and get destroyed
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "PlayerBullet")
-        {
-            Debug.Log("Hit");
-            Destroy(gameObject);
-        }
-    }
+    
+    
 
 }
