@@ -15,21 +15,21 @@ public class SmallEnemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Perfect Bullet")
+        if (collision.gameObject.tag == "PerfectBullet")
         {
             Debug.Log("Hit by Perfect Bullet");
             Health = Health - 35;
         }
 
-        else if (collision.gameObject.tag == "Good Bullet")
+        else if (collision.gameObject.tag == "GoodBullet")
         {
             Debug.Log("Hit by Good Bullet");
             Health = Health - 20;
         }
 
-        else if (collision.gameObject.tag == "Normal Bullet")
+        else if (collision.gameObject.tag == "NormalBullet")
         {
             Debug.Log("Hit by Normal Bullet");
             Health = Health - 10;
