@@ -7,7 +7,7 @@ public class BulletSpawn : MonoBehaviour
 
     public Transform weaponSpawn;
     public GameObject bulletPrefab;
-
+    GameManager gameManager;
 
 
     // Start is called before the first frame update
@@ -22,7 +22,6 @@ public class BulletSpawn : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("asassssa");
             Debug.Log("Shoot");
             Shoot();
         }
