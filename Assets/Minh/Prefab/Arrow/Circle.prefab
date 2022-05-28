@@ -134,8 +134,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keytoPress: 0
+  secondkeytoPress: 0
   missEffect: {fileID: 4087708690552220082, guid: 3019e71b48ab94f4783b8db1246c0a1d, type: 3}
   hitEffect: {fileID: 2504460923947563643, guid: cf88735430f6b2040a9cc181f93a5882, type: 3}
   goodEffect: {fileID: 6459504443543290219, guid: 036e74826ca61a3428cafc6fe93e8b26, type: 3}
   perfectEffect: {fileID: 7323350746198649612, guid: 1fd1c3feb2a961647b9836e7fdf36b6f, type: 3}
   effectSpawner: {fileID: 0}
+  bulletSpawn: {fileID: 0}

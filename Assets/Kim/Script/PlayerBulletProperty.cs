@@ -25,7 +25,9 @@ public class PlayerBulletProperty : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+
             Debug.Log(collision.gameObject.tag == "Enemy");
+            Debug.Log("Hit Enemy");
             Destroy(gameObject);
 
         }

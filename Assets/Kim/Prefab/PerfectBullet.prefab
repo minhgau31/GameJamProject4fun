@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6647202114583738627}
   m_Layer: 0
   m_Name: PerfectBullet
-  m_TagString: Perfect Bullet
+  m_TagString: PerfectBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
