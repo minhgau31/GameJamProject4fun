@@ -27,20 +27,22 @@ public class NoteObject : MonoBehaviour
                 gameObject.SetActive(false);
 
                 //GameManager.instance.NoteHit();
-                if(Mathf.Abs(transform.position.y)>0.331f)
+                if(Mathf.Abs(this.transform.position.y)>0.331f)
                 {
+                    Debug.Log(Mathf.Abs(transform.position.y));
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
 
                 }
-                else if(Mathf.Abs(transform.position.y)>0.1f)
+                else if(Mathf.Abs(this.transform.position.y)>0.1f)
                 {
+                    Debug.Log(Mathf.Abs(transform.position.y));
                     GameManager.instance.GoodHit();
                     Instantiate(goodEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
                 }
                 else
                 {
-                   
+                    Debug.Log(Mathf.Abs(transform.position.y));
                     GameManager.instance.PerfectHit();
                     Instantiate(perfectEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
                 }

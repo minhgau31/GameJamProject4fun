@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool startPlayingMusic;
 
     public BeatScroller theBS;
+    public BeatScrollerBattleSystem theBsBs;
 
     public static GameManager instance;
 
