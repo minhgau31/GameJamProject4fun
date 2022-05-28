@@ -20,6 +20,12 @@ public class PlayerBehavior : MonoBehaviour
             {
                 Debug.Log("Move");
                 transform.position = Vector3.MoveTowards(this.transform.position, checkpoint1.position, 0.05f);
+                transform.right = checkpoint1.position - transform.position;
+                if (transform.position==checkpoint1.position)
+                {
+                    check2 = true;
+                    check1 = false;
+                }
             }
 
             if (check2 == true)

@@ -28,7 +28,7 @@ public class NoteObjectBattleSystem : MonoBehaviour
                 gameObject.SetActive(false);
 
                 //GameManager.instance.NoteHit();
-                if(Mathf.Abs(this.transform.position.x) < 1.7f|| (Mathf.Abs(this.transform.position.x) > 2.35f))
+                if(Mathf.Abs(this.transform.position.x) < 1.8f|| (Mathf.Abs(this.transform.position.x) > 2.35f))
                 {
                     Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.NormalHit();
@@ -66,6 +66,7 @@ public class NoteObjectBattleSystem : MonoBehaviour
 
             GameManager.instance.NoteMiss();
             Instantiate(missEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
+            gameObject.SetActive(false);
         }
 
     }
