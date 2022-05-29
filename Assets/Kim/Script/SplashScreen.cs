@@ -8,7 +8,7 @@ public class SplashScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SplashScreen();
+       StartCoroutine(Screen());
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class SplashScreen : MonoBehaviour
     {
         
     }
-    IEnumerator SplashScreen()
+    IEnumerator Screen()
     {
 
        yield return new WaitForSeconds (9);
