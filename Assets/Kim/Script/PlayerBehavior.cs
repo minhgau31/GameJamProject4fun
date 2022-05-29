@@ -10,14 +10,14 @@ public class PlayerBehavior : MonoBehaviour
     public GameManager gameManager;
     public WayPoint Destination;
     public bool ReachedDestination = false;
-    public bool canTravel = false;
+    
 
-    public bool ableToShoot = true;
+    public bool ableToShoot = false;
     // Update is called once per frame
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) && canTravel == true)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             Travel();

@@ -19,7 +19,7 @@ public class BulletSpawn : MonoBehaviour
     public GameManager gameManager;
 
     //Can the player shoot
-    public bool canShoot = true;
+    public bool canShoot = false;
 
     public PlayerBehavior playerBehavior;
 
