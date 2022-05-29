@@ -7,16 +7,12 @@ public class PlayerBulletProperty : MonoBehaviour
 
     public float speed;
     public Rigidbody2D rb;
-    EnemyBehavior target;
-    Vector2 bulletDirection;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        rb.GetComponent<Rigidbody2D>();
-        target = GameObject.FindObjectOfType<EnemyBehavior>();
-        bulletDirection = (target.transform.position - transform.position).normalized * speed;
-        rb.velocity = new Vector2(bulletDirection.x, bulletDirection.y);
+        rb.velocity = transform.up * speed;
     }
 
    

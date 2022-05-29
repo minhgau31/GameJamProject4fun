@@ -5,26 +5,42 @@ using UnityEngine;
 public class EnenmySpawner : MonoBehaviour
 {
     public PlayerBehavior pb;
-    public bool spawnEnemy = false;
-    public GameObject enemy;
+    public bool spawnEnemy = true;
+    public GameObject smallEnemy;
+    public GameObject mediumEnemy;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        //if (spawnEnemy == true)
+        //{
+        //    Invoke("spawnEnemy", 1.0f);
+        //    StartCoroutine(SpawnEnemies());
+        //}
+
+        StartCoroutine(SpawnEnemies());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnEnemy == true)
+        
+    }
+
+    IEnumerator SpawnEnemy (GameObject enemy, float time, int amount, float rateOfFire)
+    {
+        for (int i = 0; i < amount; i++)
         {
-            Invoke("spawnEnemy", 5.0f);
-            
+            yield return new WaitForSeconds(time);
+            GameObject latestEnemy = Instantiate(enemy);
+            latestEnemy.GetComponentInChildren<EnemyBulletSpawn>().fireRate = rateOfFire;
         }
     }
 
-    void spawmEnemy()
+    IEnumerator SpawnEnemies()
     {
+        yield return new WaitForSeconds(1.5f);
+        StartCoroutine(SpawnEnemy(smallEnemy, 1.5f, 10, 3));
+        
         
     }
 }

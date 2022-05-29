@@ -10,14 +10,14 @@ public class PlayerBehavior : MonoBehaviour
     public GameManager gameManager;
     public WayPoint Destination;
     public bool ReachedDestination = false;
- 
+    public bool canTravel = false;
 
-    public bool ableToShoot = false;
+    public bool ableToShoot = true;
     // Update is called once per frame
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canTravel == true)
         {
 
             Travel();
@@ -65,12 +65,12 @@ public class PlayerBehavior : MonoBehaviour
         {
             Health = Health - 15;
         }
-        if (collision.gameObject.tag == "Enemy Check Point")
-        {
+       // if (collision.gameObject.tag == "Enemy Check Point")
+       // {
             
-            ableToShoot = true;
-            Debug.Log("alo");
-        }
+       //     ableToShoot = true;
+       //     Debug.Log("canShoot");
+       // }
 
     }
    

@@ -19,7 +19,7 @@ public class BulletSpawn : MonoBehaviour
     public GameManager gameManager;
 
     //Can the player shoot
-    public bool canShoot = false;
+    public bool canShoot = true;
 
     public PlayerBehavior playerBehavior;
 
@@ -33,11 +33,11 @@ public class BulletSpawn : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true && playerBehavior.ableToShoot==true)
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true && playerBehavior.ableToShoot == true)
         {
             Debug.Log("Shoot");
             Shoot();
-            canShoot = false;
+            
         }
 
     }

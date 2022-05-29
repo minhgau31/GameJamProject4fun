@@ -5,18 +5,16 @@ using UnityEngine;
 public class SmallEnemy : MonoBehaviour
 {
 
-    public int Health = 35;
+    
 
     public PlayerBehavior playerBehavior;
 
     void Update()
     {
-        if (Health <= 0)
-        {
-            playerBehavior.ableToShoot = false;
-            Destroy(gameObject);
-
-        }
+      
+        
+            Destroy(gameObject, 4.0f);
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -24,19 +22,19 @@ public class SmallEnemy : MonoBehaviour
         if (collision.gameObject.tag == "PerfectBullet")
         {
             Debug.Log("Hit by Perfect Bullet");
-            Health = Health - 35;
+            Destroy(gameObject);
         }
 
         else if (collision.gameObject.tag == "GoodBullet")
         {
             Debug.Log("Hit by Good Bullet");
-            Health = Health - 20;
+            Destroy(gameObject);
         }
 
         else if (collision.gameObject.tag == "NormalBullet")
         {
             Debug.Log("Hit by Normal Bullet");
-            Health = Health - 10;
+            Destroy(gameObject);
         }
     }
 }
