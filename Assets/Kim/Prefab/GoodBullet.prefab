@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7980140686749105114}
   m_Layer: 0
   m_Name: GoodBullet
-  m_TagString: Untagged
+  m_TagString: GoodBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 5465567435846458036}
   target: {fileID: 723491607864259865, guid: 3e66b70a3f8d9814998817ae304f6255, type: 3}
+  playerBehavior: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}

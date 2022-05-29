@@ -46,11 +46,14 @@ public class PlayerBehavior : MonoBehaviour
         {
             if (gameManager.perfectHit == true)
             {
+                Debug.Log("hit hard");
                 transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 2f);
+               
             }
 
             if (gameManager.goodHit == true)
             {
+                Debug.Log("hit hard2");
                 transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 1f);
             }
         }

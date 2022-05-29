@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject smallEnemy;
+    
     public PlayerBehavior playerBehavior;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     {
        if(playerBehavior.SpawnedEnemy == true)
         {
-           StartCoroutine(SpawnEnemy1(smallEnemy, 4.0f, 1, 3));
+           StartCoroutine(SpawnEnemy1(smallEnemy, 6.0f, 1, 3));
             playerBehavior.SpawnedEnemy = false;
 
         }

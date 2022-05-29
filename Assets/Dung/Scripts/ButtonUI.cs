@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class ButtonUI : MonoBehaviour
 {
 
-    [SerializeField] private string newGameLevel = "Level1Test";
-    [SerializeField] private string creditScreen = "Credits";
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +26,7 @@ public class ButtonUI : MonoBehaviour
 
     public void CreditButton()
     {
-        SceneManager.LoadScene(creditScreen);
+        SceneManager.LoadScene("Credits");
     }
 
     public void ExitGame()
