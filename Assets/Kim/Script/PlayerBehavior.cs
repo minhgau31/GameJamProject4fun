@@ -87,7 +87,16 @@ public class PlayerBehavior : MonoBehaviour
         }
 
     }
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.gameObject.tag == "Last Destination")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+    }
+
 
 
 }

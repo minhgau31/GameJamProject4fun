@@ -30,14 +30,14 @@ public class NoteObjectBattleSystem : MonoBehaviour
                 gameObject.SetActive(false);
 
                 //GameManager.instance.NoteHit();
-                if(Mathf.Abs(this.transform.position.x)< 2.48f|| Mathf.Abs(this.transform.position.x) > 2.66f)
+                if(Mathf.Abs(this.transform.position.x)< 1.77f|| Mathf.Abs(this.transform.position.x) > 2.43f)
                 {
                     Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, effectSpawner.transform.position, hitEffect.transform.rotation);
 
                 }
-                else if (Mathf.Abs(this.transform.position.x) < 2.5f || Mathf.Abs(this.transform.position.x) > 2.60f)
+                else if (Mathf.Abs(this.transform.position.x) < 1.85f || Mathf.Abs(this.transform.position.x) > 2.10f)
                 {
                     Debug.Log(Mathf.Abs(transform.position.x));
                     GameManager.instance.GoodHit();
