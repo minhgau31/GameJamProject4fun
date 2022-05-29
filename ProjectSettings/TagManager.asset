@@ -13,6 +13,7 @@ TagManager:
   - GoodBullet
   - EndGame
   - Enemy Check Point
+  - Last Destination
   layers:
   - Default
   - TransparentFX

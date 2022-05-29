@@ -60,7 +60,7 @@ public class NoteObjectBattleSystem : MonoBehaviour
             if(playerBehavior.ableToShoot==true)
             {
                 bulletSpawn.canShoot = true;
-                Debug.Log(bulletSpawn.canShoot);
+                
                 return;
             }
         }

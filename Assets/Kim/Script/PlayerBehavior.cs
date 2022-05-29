@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -10,19 +12,27 @@ public class PlayerBehavior : MonoBehaviour
     public GameManager gameManager;
     public WayPoint Destination;
     public bool ReachedDestination = false;
-    
-
+    public bool SpawnedEnemy = false;
     public bool ableToShoot = false;
+    public TextMeshPro healthScript;
     // Update is called once per frame
+    public void Start()
+    {
+      
+    }
     void Update()
     {
-        
+        healthScript.text=Health.ToString();
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
             Travel();
+           Debug.Log(ableToShoot);
+            Debug.Log(Destination.transform.position);
         }
+     
     }
+    
 
     void Travel()
     {
@@ -36,12 +46,12 @@ public class PlayerBehavior : MonoBehaviour
         {
             if (gameManager.perfectHit == true)
             {
-                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 0.5f);
+                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 2f);
             }
 
             if (gameManager.goodHit == true)
             {
-                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 0.5f);
+                transform.position = Vector3.MoveTowards(this.transform.position, Destination.transform.position, 1f);
             }
         }
 
@@ -65,12 +75,16 @@ public class PlayerBehavior : MonoBehaviour
         {
             Health = Health - 15;
         }
-       // if (collision.gameObject.tag == "Enemy Check Point")
-       // {
-            
-       //     ableToShoot = true;
-       //     Debug.Log("canShoot");
-       // }
+        if (collision.gameObject.tag == "Enemy Check Point")
+        {
+            SpawnedEnemy = true;
+            ableToShoot = true;
+            Debug.Log("canShoot");
+        }
+        if(collision. gameObject.tag=="Last Destination")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
 
     }
    

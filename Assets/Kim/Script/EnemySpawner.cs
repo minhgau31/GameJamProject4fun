@@ -6,36 +6,34 @@ public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject smallEnemy;
+    public PlayerBehavior playerBehavior;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnEnemies());
+      
     }
-
-    IEnumerator SpawnEnemies()
+    public void Update()
     {
-        yield return new WaitForSeconds(10f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 5, 3));
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 5, 3));
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 5, 3));
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 5, 3));
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 5, 3));
-        yield return new WaitForSeconds(2.5f);
-        StartCoroutine(SpawnEnemy(smallEnemy, 2.0f, 10, 3));
-    }
-
-    IEnumerator SpawnEnemy (GameObject enemy, float time, int amount, float rateOfFire)
-    {
-        for (int i = 0; i < amount; i++)
+       if(playerBehavior.SpawnedEnemy == true)
         {
-            GameObject latestEnemy = Instantiate(enemy);
-            yield return new WaitForSeconds(time);
-            latestEnemy.GetComponentInChildren<EnemyBulletSpawn>().fireRate = rateOfFire;
+           StartCoroutine(SpawnEnemy1(smallEnemy, 4.0f, 1, 3));
+            playerBehavior.SpawnedEnemy = false;
+
         }
+    }
+
+  
+
+  
+    IEnumerator SpawnEnemy1(GameObject enemy, float time, int amount, float rateOfFire)
+    {
+       
+            GameObject latestEnemy = Instantiate(enemy);
+           
+            latestEnemy.GetComponentInChildren<EnemyBulletSpawn>().fireRate = rateOfFire;
+        yield return new WaitForSeconds(time);
+        playerBehavior.ableToShoot = false;
+
     }
 
 }

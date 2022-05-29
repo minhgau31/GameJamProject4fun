@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (49)
@@ -191,6 +203,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (176)
@@ -252,6 +276,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (177)
@@ -306,6 +342,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+--- !u!1 &47412009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47412010}
+  - component: {fileID: 47412011}
+  - component: {fileID: 47412012}
+  - component: {fileID: 47412013}
+  m_Layer: 0
+  m_Name: Way Point
+  m_TagString: Last Destination
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47412010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47412009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13, y: 0.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47412011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47412009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cc1b8c955131646ab4278636bc00e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Destination: {fileID: 47412011}
+--- !u!61 &47412012
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47412009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &47412013
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47412009}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &47740005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,6 +442,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (11)
@@ -396,6 +537,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (124)
@@ -457,6 +610,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (104)
@@ -518,6 +683,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (155)
@@ -579,6 +756,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (32)
@@ -640,6 +829,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (130)
@@ -701,6 +902,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (126)
@@ -762,6 +975,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (131)
@@ -823,6 +1048,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (91)
@@ -884,6 +1121,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (15)
@@ -938,6 +1187,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+--- !u!1 &113190286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113190287}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113190287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113190286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13, y: 0.1, z: -9.502759}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &120666657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -945,6 +1224,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (82)
@@ -1006,6 +1297,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (191)
@@ -1067,6 +1370,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (161)
@@ -1128,6 +1443,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (185)
@@ -1189,6 +1516,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (95)
@@ -1255,6 +1594,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (26)
@@ -1316,6 +1667,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (27)
@@ -1446,6 +1809,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (162)
@@ -1507,6 +1882,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (40)
@@ -1568,6 +1955,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (156)
@@ -1651,7 +2050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5370eb16532034c99007b8c0d907d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallEnemy: {fileID: 3961472230909373763, guid: 909d379b142b5714ea8299c1ed455c2b, type: 3}
+  smallEnemy: {fileID: 8412986827338458385, guid: 3e66b70a3f8d9814998817ae304f6255, type: 3}
+  playerBehavior: {fileID: 1615109806}
 --- !u!4 &260399120
 Transform:
   m_ObjectHideFlags: 0
@@ -1800,6 +2200,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle
@@ -1861,6 +2273,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (98)
@@ -1922,6 +2346,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (146)
@@ -1983,6 +2419,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (112)
@@ -2044,6 +2492,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (86)
@@ -2105,6 +2565,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (154)
@@ -2166,6 +2638,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (140)
@@ -2227,6 +2711,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (34)
@@ -2288,6 +2784,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (173)
@@ -2349,6 +2857,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (23)
@@ -2410,6 +2930,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (79)
@@ -2471,6 +3003,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (30)
@@ -2532,6 +3076,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (188)
@@ -2593,6 +3149,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (63)
@@ -2654,6 +3222,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (5)
@@ -2715,6 +3295,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (171)
@@ -2776,6 +3368,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (65)
@@ -2837,6 +3441,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (19)
@@ -2898,6 +3514,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (53)
@@ -2959,6 +3587,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (92)
@@ -3020,6 +3660,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (184)
@@ -3081,6 +3733,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (76)
@@ -3142,6 +3806,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (125)
@@ -3203,6 +3879,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (51)
@@ -3264,6 +3952,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (84)
@@ -3325,6 +4025,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (108)
@@ -3386,6 +4098,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (36)
@@ -3447,6 +4171,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (147)
@@ -3508,6 +4244,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (133)
@@ -3569,6 +4317,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (111)
@@ -3630,6 +4390,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (137)
@@ -3691,6 +4463,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (143)
@@ -3752,6 +4536,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (101)
@@ -3806,6 +4602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+--- !u!1 &520769827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1556958018011838335, guid: 7e2133614810c194f907c9aab4b23d8b, type: 3}
+  m_PrefabInstance: {fileID: 1107988484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &521229192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3813,6 +4614,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (118)
@@ -3874,6 +4687,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (80)
@@ -3935,6 +4760,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (186)
@@ -3996,6 +4833,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (136)
@@ -4057,6 +4906,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (13)
@@ -4118,6 +4979,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (68)
@@ -4179,6 +5052,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (58)
@@ -4240,6 +5125,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (33)
@@ -4301,6 +5198,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (114)
@@ -4362,6 +5271,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (38)
@@ -4423,6 +5344,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (29)
@@ -4484,6 +5417,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (168)
@@ -4545,6 +5490,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (179)
@@ -4606,6 +5563,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (39)
@@ -4667,6 +5636,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (56)
@@ -4728,6 +5709,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (46)
@@ -4789,6 +5782,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (85)
@@ -4850,6 +5855,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (41)
@@ -4911,6 +5928,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (50)
@@ -4972,6 +6001,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (81)
@@ -5033,6 +6074,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (97)
@@ -5094,6 +6147,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (16)
@@ -5155,6 +6220,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (175)
@@ -5216,6 +6293,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (117)
@@ -5277,6 +6366,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (100)
@@ -5338,6 +6439,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (55)
@@ -5399,6 +6512,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (37)
@@ -5460,6 +6585,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (20)
@@ -5521,6 +6658,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (62)
@@ -5582,6 +6731,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (149)
@@ -5643,6 +6804,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (120)
@@ -5704,6 +6877,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (148)
@@ -5765,6 +6950,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (6)
@@ -5829,7 +7026,15 @@ PrefabInstance:
     - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: bulletSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (3)
@@ -5891,6 +7096,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (121)
@@ -5952,6 +7169,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (60)
@@ -6013,6 +7242,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (12)
@@ -6074,6 +7315,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (180)
@@ -6210,6 +7463,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (159)
@@ -6271,6 +7536,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (183)
@@ -6332,6 +7609,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (9)
@@ -6393,6 +7682,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (31)
@@ -6454,6 +7755,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (103)
@@ -6515,6 +7828,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (134)
@@ -6576,6 +7901,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (102)
@@ -6637,6 +7974,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (75)
@@ -6703,6 +8052,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (45)
@@ -6764,6 +8125,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (152)
@@ -6825,6 +8198,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (18)
@@ -6886,6 +8271,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (165)
@@ -6947,6 +8344,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (116)
@@ -7765,6 +9174,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (119)
@@ -7826,6 +9247,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (90)
@@ -7887,6 +9320,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (14)
@@ -7948,6 +9393,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (129)
@@ -8009,6 +9466,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (141)
@@ -8070,6 +9539,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (190)
@@ -8131,6 +9612,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (10)
@@ -8192,6 +9685,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (7)
@@ -8253,6 +9758,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (35)
@@ -8314,6 +9831,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (138)
@@ -8375,6 +9904,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (70)
@@ -8502,6 +10043,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (172)
@@ -8563,6 +10116,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (99)
@@ -8624,6 +10189,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (44)
@@ -8685,6 +10262,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (113)
@@ -8751,6 +10340,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (66)
@@ -8812,6 +10413,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (43)
@@ -8873,6 +10486,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (139)
@@ -8934,6 +10559,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (52)
@@ -8995,6 +10632,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (157)
@@ -9056,6 +10705,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (144)
@@ -9117,6 +10778,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (169)
@@ -9178,6 +10851,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (59)
@@ -9239,6 +10924,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (166)
@@ -9300,6 +10997,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (83)
@@ -9361,6 +11070,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (61)
@@ -9422,6 +11143,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (24)
@@ -9483,6 +11216,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (107)
@@ -9544,6 +11289,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (4)
@@ -9605,6 +11362,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (110)
@@ -9666,6 +11435,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (170)
@@ -9727,6 +11508,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (2)
@@ -9888,6 +11681,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (8)
@@ -9979,6 +11784,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (181)
@@ -10040,6 +11857,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (145)
@@ -10101,6 +11930,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (142)
@@ -10162,6 +12003,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (73)
@@ -10227,6 +12080,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f99dd969b6cc444bb46d1b4e7e9b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1615109806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+  m_PrefabInstance: {fileID: 4893066886727392853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2d24e0720ba034885136f3baeed57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1620153426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10234,6 +12098,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (109)
@@ -10295,6 +12171,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (135)
@@ -10356,6 +12244,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (158)
@@ -10417,6 +12317,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (77)
@@ -10478,6 +12390,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (47)
@@ -10539,6 +12463,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (153)
@@ -10600,6 +12536,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (128)
@@ -10661,6 +12609,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (187)
@@ -10722,6 +12682,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (21)
@@ -10783,6 +12755,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (1)
@@ -10844,6 +12828,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (189)
@@ -10905,6 +12901,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (182)
@@ -10966,6 +12974,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (106)
@@ -11027,6 +13047,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (69)
@@ -11185,6 +13217,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (96)
@@ -11246,6 +13290,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (123)
@@ -11307,6 +13363,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (42)
@@ -11368,6 +13436,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (94)
@@ -11429,6 +13509,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (48)
@@ -11490,6 +13582,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (93)
@@ -11551,6 +13655,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (160)
@@ -11612,6 +13728,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (28)
@@ -11673,6 +13801,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (163)
@@ -11734,6 +13874,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (89)
@@ -11795,6 +13947,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (17)
@@ -11856,6 +14020,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (78)
@@ -11917,6 +14093,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (164)
@@ -11978,6 +14166,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (151)
@@ -12039,6 +14239,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (127)
@@ -12100,6 +14312,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (71)
@@ -12154,6 +14378,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+--- !u!114 &1932004752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4893066886533732237, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+  m_PrefabInstance: {fileID: 4893066886727392853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb1aa78f9601b3c42b44fb7438786cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1939180548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12161,6 +14396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (115)
@@ -12222,6 +14469,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (105)
@@ -12283,6 +14542,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (25)
@@ -12344,6 +14615,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (67)
@@ -12405,6 +14688,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (178)
@@ -12466,6 +14761,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (74)
@@ -12527,6 +14834,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (57)
@@ -12588,6 +14907,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (174)
@@ -12642,6 +14973,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+--- !u!114 &2038756796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4905026151613701532, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+  m_PrefabInstance: {fileID: 4893066886727392853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2050194894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12649,6 +14991,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (167)
@@ -12710,6 +15064,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (88)
@@ -12771,6 +15137,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (132)
@@ -12832,6 +15210,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (87)
@@ -12893,6 +15283,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (150)
@@ -12954,6 +15356,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (122)
@@ -13015,6 +15429,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (22)
@@ -13078,30 +15504,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2117555521}
-  - component: {fileID: 2117555520}
   - component: {fileID: 2117555523}
   - component: {fileID: 2117555522}
   - component: {fileID: 2117555524}
   m_Layer: 0
   m_Name: EnemyCheckPoint
-  m_TagString: Untagged
+  m_TagString: Enemy Check Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2117555520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117555519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cc1b8c955131646ab4278636bc00e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Destination: {fileID: 0}
 --- !u!4 &2117555521
 Transform:
   m_ObjectHideFlags: 0
@@ -13110,7 +15522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117555519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.21, y: -0.83, z: -9.502759}
+  m_LocalPosition: {x: 0.13, y: -1.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13126,7 +15538,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13157,7 +15569,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -13182,6 +15594,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (54)
@@ -13243,6 +15667,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (64)
@@ -13304,6 +15740,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1045102473}
     m_Modifications:
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 1932004752}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: effectSpawner
+      value: 
+      objectReference: {fileID: 520769827}
+    - target: {fileID: 570604715450013996, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
+      propertyPath: playerBehavior
+      value: 
+      objectReference: {fileID: 1615109806}
     - target: {fileID: 6231336894492125320, guid: 7bf1cf96e9212424c99b209561e72da5, type: 3}
       propertyPath: m_Name
       value: Circle (72)
@@ -13365,6 +15813,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1243942987}
     m_Modifications:
+    - target: {fileID: 1131786463919470541, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131786463919470541, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.21
+      objectReference: {fileID: 0}
     - target: {fileID: 4893066886533732237, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
       propertyPath: gameManager
       value: 
@@ -13417,6 +15873,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4893066886600317150, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: Destination
+      value: 
+      objectReference: {fileID: 47412011}
+    - target: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: ableToShoot
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
       propertyPath: checkpoint1
       value: 
@@ -13425,5 +15893,25 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1599488341}
+    - target: {fileID: 4893066886600317151, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: healthScript
+      value: 
+      objectReference: {fileID: 2038756796}
+    - target: {fileID: 4905026151613701532, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_fontSize
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905026151613701532, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_margin.w
+      value: 4.133843
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905026151613701532, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_margin.z
+      value: 16.603832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905026151613701532, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2.73
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063bf19ab7ccfd4408a2eb2f76e331e3, type: 3}

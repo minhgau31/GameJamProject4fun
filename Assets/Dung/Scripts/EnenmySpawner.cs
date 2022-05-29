@@ -8,6 +8,7 @@ public class EnenmySpawner : MonoBehaviour
     public bool spawnEnemy = true;
     public GameObject smallEnemy;
     public GameObject mediumEnemy;
+    public PlayerBehavior playerBehavior;
     // Start is called before the first frame update
     public void Start()
     {
@@ -17,13 +18,16 @@ public class EnenmySpawner : MonoBehaviour
         //    StartCoroutine(SpawnEnemies());
         //}
 
-        StartCoroutine(SpawnEnemies());
+        //StartCoroutine(SpawnEnemies());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(playerBehavior.ableToShoot==true)
+        {
+            StartCoroutine(SpawnEnemies());
+        }
     }
 
     IEnumerator SpawnEnemy (GameObject enemy, float time, int amount, float rateOfFire)

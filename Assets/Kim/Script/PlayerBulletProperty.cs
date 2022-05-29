@@ -7,7 +7,10 @@ public class PlayerBulletProperty : MonoBehaviour
 
     public float speed;
     public Rigidbody2D rb;
-    
+    public EnemyBehavior target;
+    Vector2 bulletDirection;
+    public PlayerBehavior playerBehavior;
+
 
     // Start is called before the first frame update
     void Start()
