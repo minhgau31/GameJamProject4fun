@@ -23,7 +23,7 @@ public class ButtonUI : MonoBehaviour
 
     public void NewGameButton()
     {
-        SceneManager.LoadScene(newGameLevel);
+        SceneManager.LoadScene("Tutorial Scene");
     }
 
     public void CreditButton()
